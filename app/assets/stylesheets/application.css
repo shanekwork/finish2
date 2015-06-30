@@ -18,4 +18,4 @@
 .showIt {
 	display: block;
 }
-.security {display: none !important}
+.alert.security {display: none !important}

@@ -185,7 +185,7 @@ div.home_images a img {
 	max-width: 120px;
 	max-height: 120px;
 }
-
+.alert.security {display: none !important}
 
 /*
 #special_sale {
