@@ -10,7 +10,7 @@ module Spree
       @taxonomies = Spree::Taxonomy.includes(root: :children)
       @user = Spree::User.first
       company = Company.where(user_id: 1)
-      @c = @user.company 
+      @c = @user.company.present?
     end
 
   end
