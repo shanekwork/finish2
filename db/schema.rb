@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150707143203) do
+ActiveRecord::Schema.define(version: 20150421084214) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,23 +21,6 @@ ActiveRecord::Schema.define(version: 20150707143203) do
     t.boolean  "active"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "companies", force: true do |t|
-    t.string   "name"
-    t.string   "address1"
-    t.string   "address2"
-    t.string   "address3"
-    t.string   "town"
-    t.string   "county"
-    t.string   "postcode"
-    t.string   "phone"
-    t.string   "facebook"
-    t.string   "twitter"
-    t.string   "linkedin"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "user_id"
   end
 
   create_table "import_controls", force: true do |t|
@@ -387,9 +370,6 @@ ActiveRecord::Schema.define(version: 20150707143203) do
   add_index "spree_paypal_express_checkouts", ["transaction_id"], name: "index_spree_paypal_express_checkouts_on_transaction_id", using: :btree
 
   create_table "spree_preferences", force: true do |t|
-    t.string   "name",       limit: 100
-    t.integer  "owner_id"
-    t.string   "owner_type"
     t.text     "value"
     t.string   "key"
     t.string   "value_type"
@@ -474,8 +454,6 @@ ActiveRecord::Schema.define(version: 20150707143203) do
     t.boolean  "special",                                              default: false
     t.boolean  "featured",                                             default: false
     t.boolean  "latest",                                               default: false
-    t.integer  "catalogue_id"
-    t.integer  "catalogue"
   end
 
   add_index "spree_products", ["available_on"], name: "index_spree_products_on_available_on", using: :btree
@@ -859,7 +837,6 @@ ActiveRecord::Schema.define(version: 20150707143203) do
     t.datetime "updated_at"
     t.string   "spree_api_key",          limit: 48
     t.datetime "remember_created_at"
-    t.integer  "company_id"
   end
 
   add_index "spree_users", ["email"], name: "email_idx_unique", unique: true, using: :btree
