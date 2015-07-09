@@ -7,10 +7,8 @@
 <%= form_tag admin_general_settings_path, :method => :put do %>
 
 <% @company = Company.where(user_id: 1) %>
-<% @current_company = Company.first %>
-<% @first = @current_company.id %>
 <%= link_to 'New Company Address', '/companies/new' %><br><br>
-<%= link_to 'Edit Company Address', @first %>
+<%= link_to 'Edit Company Address', "#{@company + '/edit'}" %>
 
   <div id="preferences" data-hook>
 
