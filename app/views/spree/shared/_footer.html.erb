@@ -22,8 +22,10 @@
 		                  <li>
 		                     <i class="fa fa-mobile">&nbsp;</i>
 		                     <span>
-		                     <% if @c.phone != nil %>
-		                     		<%= @c.phone %>
+		                     <% if @c.phone.blank? %>
+		                     	''
+		                     <% else %>
+		                     	<%= @c.phone %>
 		                     <% end %>
 		                     </span>
 		                  </li>
