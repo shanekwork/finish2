@@ -10,11 +10,7 @@ module Spree
       @taxonomies = Spree::Taxonomy.includes(root: :children)
       @user = Spree::User.first
       company = Company.where(user_id: 1)
-      if company !nil || company.user_id !nil
-        @c = @user.company
-      else
-        redirect_to root_path
-      end
+      @c = @user.company
     end
 
   end
