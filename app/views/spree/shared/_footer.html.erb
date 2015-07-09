@@ -22,7 +22,9 @@
 		                  <li>
 		                     <i class="fa fa-mobile">&nbsp;</i>
 		                     <span>
-							<%= nil.try(@c.phone) %>
+		                     <% if @c.phone.any? %>
+							<%= @c.phone %>
+						<%  %>
 						</span>
 		                  </li>
 		   
