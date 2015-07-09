@@ -23,7 +23,7 @@
 		                     <i class="fa fa-mobile">&nbsp;</i>
 		                     <span>
 		                     <% if @c.phone.blank? %>
-		                     	''
+		                     	<%= 'blank' %>
 		                     <% else %>
 		                     	<%= @c.phone %>
 		                     <% end %>
