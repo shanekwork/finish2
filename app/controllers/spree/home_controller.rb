@@ -9,8 +9,8 @@ module Spree
       @products = @searcher.retrieve_products.ascend_by_master_price
       @taxonomies = Spree::Taxonomy.includes(root: :children)
       @user = Spree::User.first
-      company = Company.where(user_id: 1)
-      @c = @user.company.present?
+      company = Company.where(user_id: 1).present?
+      @c = @user.company
     end
 
   end
