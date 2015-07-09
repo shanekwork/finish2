@@ -8,9 +8,9 @@
 
 <% @company = Company.where(user_id: 1) %>
 <% @current_company = Company.first %>
-<% @first = @current_company.id + '/edit' %>
+<% @first = @current_company.id %>
 <%= link_to 'New Company Address', '/companies/new' %><br><br>
-<%= link_to 'Edit Company Address', @first %>
+<%= link_to 'Edit Company Address', @first + '/edit' %>
 
   <div id="preferences" data-hook>
 
