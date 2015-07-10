@@ -1,4 +1,4 @@
-class CompaniesController < Spree:BaseController
+class CompaniesController < ApplicationController
 
 	layout 'spree_application'
 	
