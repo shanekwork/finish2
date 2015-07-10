@@ -1,4 +1,9 @@
+module Spree
+
 class CompaniesController < ApplicationController
+
+	layout 'spree_application'
+
 	def new
 		@company = Company.new
 	end
@@ -38,5 +43,7 @@ private
 	def company_params
 	      params.require(:company).permit(:name, :address1, :address2, :address3, :town, :postcode, :phone, :county, :facebook, :twitter, :linkedin)
 	end
+
+end
 
 end
