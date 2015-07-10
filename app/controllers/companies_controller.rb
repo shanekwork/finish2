@@ -1,7 +1,7 @@
 class CompaniesController < ApplicationController
 
-	layout 'spree_application'
-	
+
+
 	def new
 		@company = Company.new
 	end
