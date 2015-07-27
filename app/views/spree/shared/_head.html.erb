@@ -50,7 +50,7 @@
 	                    'text': 'You have received a Subscription Request.\n\n' + emailNewsletter + ' wants to request a newsletter',
 	                    'to': new Array (
 	                    {
-	                        'email': '<%= @c.mailer.html_safe %>',
+	                        'email': '<%= @c.mailer %>',
 	                        'name': 'mysterious-ravine',
 	                        'type': 'to'
 	                    })
