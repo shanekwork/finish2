@@ -47,10 +47,10 @@
 	                        'Reply-To': emailNewsletter
 	                    },
 	                    'subject': 'mysterious-ravine get Newsletter',
-	                    'text': 'You have received a request from mysterious-ravine site.\n\n' + emailNewsletter + ' wants request a newsletter',
+	                    'text': 'You have received a Subscription Request.\n\n' + emailNewsletter + ' wants to request a newsletter',
 	                    'to': new Array (
 	                    {
-	                        'email': 'alan@supportsolutions.ie',
+	                        'email': '<%= @c.mailer.html_safe %>',
 	                        'name': 'mysterious-ravine',
 	                        'type': 'to'
 	                    })
