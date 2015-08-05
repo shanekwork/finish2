@@ -471,7 +471,7 @@ body{
 				#link-to-cart{
 					float:left;
 					margin:0 0 0 3.5em;
-					width:18.3%;
+					width:17.3%;
 					}
 					#link-to-cart A{
 						background:transparent url("/assets/cart.png") no-repeat left top;
@@ -491,7 +491,7 @@ body{
 				#header .phone{
 					float:left;
 					margin:0 0 0 1.8em;
-					width:17%;
+					width:18%;
 					}
 					#header .phone IMG{
 						float:left;
@@ -537,12 +537,13 @@ body{
 						}
 						#main-menu FIGURE A IMG{
 						    float:left;
+						    max-height:6.15em;
 						    max-width:14.2em;
 						    padding:0;
 						    width:auto!important;
 							}
 				#main-menu NAV{
-				    float:left;
+				    float:right;
 				    margin:0 0 0 4.2em;
 				    width:77%;
 					}
@@ -568,32 +569,23 @@ body{
 							    float:left;
 							    font-family:'Roboto', sans-serif;
 							    font-weight:normal;
-							    font-size:1em!important;
-							    padding:0;
+							    font-size:1.05em!important;
+							    padding:0 0.89em 0 0;
 							    width:auto;
 								}
-								#main-menu NAV UL LI A{
-									color:#ffffff!important;
-								    float:left;
-								    font-family:'Roboto', sans-serif;
-								    font-weight:normal;
-								    font-size:1em!important;
-								    padding:0 0.89em 0 0;
-								    width:auto;
+								#main-menu NAV UL LI:first-child A{
+								    padding:0!important;
 									}
-							#main-menu NAV UL LI:first-child A{
-							    padding:0!important;
-								}
-								#main-menu NAV UL LI A.selected,
-								#main-menu NAV UL LI A:hover{
-									color:#19b794!important;
-									}
+									#main-menu NAV UL LI A.selected,
 									#main-menu NAV UL LI A:hover{
-										background:transparent url("/assets/sel-down-menu-arrow.png") no-repeat right 0.35em!important;
+										color:#444444!important;
 										}
-									#main-menu NAV UL LI:first-child A:hover{
-										background:none!important;
-										}
+										#main-menu NAV UL LI A:hover{
+											background:transparent url("/assets/sel-down-menu-arrow.png") no-repeat right 0.45em!important;
+											}
+										#main-menu NAV UL LI:first-child A:hover{
+											background:none!important;
+											}
 							#main-menu NAV UL LI UL{
 								background:#ffffff;
 								border:none;
@@ -618,7 +610,7 @@ body{
 									#main-menu NAV UL LI UL LI:first-child A{
 										background:transparent url("menu-arrow.png") no-repeat 16em center;
 										color:#5b5b5b!important;
-										font-size:0.9em!important;
+										font-size:1em!important;
 										line-height:1.2em;
 									    padding:0.5em 3em 0.5em 0.5em !important;
 									    width:80%;
@@ -690,7 +682,7 @@ body{
 								}
 								#main-menu NAV UL LI:nth-last-child(-n+3) UL LI A{
 									background:transparent url("menu-arrow-left.png") no-repeat 1em center;
-									font-size:0.9em!important;
+									font-size:1em!important;
 									padding:0.5em 0.5em 0.5em 2.1em!important;
 									text-align:right;
 									width:80.3%;
