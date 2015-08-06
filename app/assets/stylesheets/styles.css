@@ -1714,6 +1714,13 @@ body{
 					#registration #guest_checkout FORM{
 						width:85.5%;
 						}
+						#registration #existing-customer FORM INPUT[type="checkbox"]{
+							margin:0.25em 0.5em 0 33.3%;
+							}
+						#registration #existing-customer FORM LABEL[for="spree_user_remember_me"]{
+							margin:0;
+							width:auto;
+							}
 				#footer{
 					border:none!important;
 				    color:#191919;
