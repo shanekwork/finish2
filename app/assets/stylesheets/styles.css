@@ -1710,6 +1710,10 @@ body{
 						#cart-detail TR.adjustment TD:last-child{
 							text-align:center;
 							}
+					#registration #existing-customer FORM,
+					#registration #guest_checkout FORM{
+						width:85.5%;
+						}
 				#footer{
 					border:none!important;
 				    color:#191919;
