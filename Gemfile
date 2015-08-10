@@ -27,7 +27,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 's3'
 gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express', branch: '2-2-stable'
-
+gem 'haml'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
