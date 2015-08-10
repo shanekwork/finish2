@@ -70,6 +70,7 @@ UL{
 		float:left;
 		font-size:0.95em;
 		line-height:1.2em;
+		list-style:none;
 		margin:0 0 0.8em 0;
 		padding:0;
 		width:100%;
@@ -471,7 +472,7 @@ body{
 				#link-to-cart{
 					float:left;
 					margin:0 0 0 3.5em;
-					width:18.3%;
+					width:17.3%;
 					}
 					#link-to-cart A{
 						background:transparent url("/assets/cart.png") no-repeat left top;
@@ -491,7 +492,7 @@ body{
 				#header .phone{
 					float:left;
 					margin:0 0 0 1.8em;
-					width:17%;
+					width:18%;
 					}
 					#header .phone IMG{
 						float:left;
@@ -537,12 +538,13 @@ body{
 						}
 						#main-menu FIGURE A IMG{
 						    float:left;
+						    max-height:6.15em;
 						    max-width:14.2em;
 						    padding:0;
 						    width:auto!important;
 							}
 				#main-menu NAV{
-				    float:left;
+				    float:right;
 				    margin:0 0 0 4.2em;
 				    width:77%;
 					}
@@ -569,31 +571,22 @@ body{
 							    font-family:'Roboto', sans-serif;
 							    font-weight:normal;
 							    font-size:1em!important;
-							    padding:0;
+							    padding:0 0.89em 0 0;
 							    width:auto;
 								}
-								#main-menu NAV UL LI A{
-									color:#ffffff!important;
-								    float:left;
-								    font-family:'Roboto', sans-serif;
-								    font-weight:normal;
-								    font-size:1em!important;
-								    padding:0 0.89em 0 0;
-								    width:auto;
+								#main-menu NAV UL LI:first-child A{
+								    padding:0!important;
 									}
-							#main-menu NAV UL LI:first-child A{
-							    padding:0!important;
-								}
-								#main-menu NAV UL LI A.selected,
-								#main-menu NAV UL LI A:hover{
-									color:#19b794!important;
-									}
+									#main-menu NAV UL LI A.selected,
 									#main-menu NAV UL LI A:hover{
-										background:transparent url("/assets/sel-down-menu-arrow.png") no-repeat right 0.35em!important;
+										color:#444444!important;
 										}
-									#main-menu NAV UL LI:first-child A:hover{
-										background:none!important;
-										}
+										#main-menu NAV UL LI A:hover{
+											background:transparent url("/assets/sel-down-menu-arrow.png") no-repeat right 0.45em!important;
+											}
+										#main-menu NAV UL LI:first-child A:hover{
+											background:none!important;
+											}
 							#main-menu NAV UL LI UL{
 								background:#ffffff;
 								border:none;
@@ -639,7 +632,7 @@ body{
 											}
 											#main-menu NAV UL LI UL LI:hover A,
 											#main-menu NAV UL LI UL LI:first-child A:hover{
-												background:#19b794 url("sel-menu-arrow.png") no-repeat scroll 16em center!important;
+												background:#19b794 url("sel-menu-arrow.png") no-repeat scroll 15em center!important;
 											    color:#ffffff!important;
 											    padding:0.5em 2.1em 0.5em 0.5em!important;
 											    width:85.5%;
@@ -690,7 +683,7 @@ body{
 								}
 								#main-menu NAV UL LI:nth-last-child(-n+3) UL LI A{
 									background:transparent url("menu-arrow-left.png") no-repeat 1em center;
-									font-size:0.9em!important;
+									font-size:1em!important;
 									padding:0.5em 0.5em 0.5em 2.1em!important;
 									text-align:right;
 									width:80.3%;
@@ -1703,6 +1696,32 @@ body{
 						#content .search-results #products{
 							margin:0;
 							}
+					#cart-detail TR.cart-subtotal{
+						background:#191919;
+						}
+						#cart-detail TR.cart-subtotal TD,
+						#cart-detail TR.total-price TD:nth-child(n+1){
+							text-align:right;
+							}
+							#cart-detail TR.cart-subtotal TD H5,
+							#cart-detail TR.adjustment H5{
+								font-size:1em;
+								}
+						#cart-detail TR.adjustment TD:last-child{
+							text-align:center;
+							}
+					#registration #existing-customer FORM,
+					#registration #guest_checkout FORM{
+						min-height:15em;
+						width:85.5%;
+						}
+						#registration #existing-customer FORM INPUT[type="checkbox"]{
+							margin:0.25em 0.5em 0 33.3%;
+							}
+						#registration #existing-customer FORM LABEL[for="spree_user_remember_me"]{
+							margin:0;
+							width:auto;
+							}
 				#footer{
 					border:none!important;
 				    color:#191919;
@@ -1864,10 +1883,14 @@ body{
 		width:19.85em;
 		}
 		nav#top-nav-bar UL LI#search-bar INPUT[type="submit"]{
-		  padding:0.95em 1.15em 0.9em 1.15em!important;
+		  	padding:0.95em 1.15em 0.9em 1.15em!important;
+		  	width:16.3em;
 			}
 	#content #checkout .row .columns FORM .columns.omega{
 	    min-height:53.8em;
+		}
+	#content UL#products LI{
+		width:18.7%;
 		}
 }
 
