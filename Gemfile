@@ -28,12 +28,15 @@ gem 'jbuilder', '~> 1.2'
 gem 's3'
 gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express', branch: '2-2-stable'
 gem 'haml'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
 gem 'rails_12factor'
 gem 'spree_quick_cart', :branch => '2-2-stable'
+
 gem 'money', '6.0.1'
 gem 'spree', '2.2.1'
 gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-2-stable'
