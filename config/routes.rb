@@ -7,7 +7,9 @@ get 'additional_pages/findme'
 #match '/contacts', to: 'contacts#new', via: 'get'
 #resources "contacts", only: [:new, :create]
 post 'products/select', as: 'select'
-
+namespace :api do
+  resources :quick_orders, only: [:show]
+end
   # This line mounts Spree's routes at the root of your application.
   # This means, any requests to URLs such as /products, will go to Spree::ProductsController.
   # If you would like to change where this engine is mounted, simply change the :at option to something different.
